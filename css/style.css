@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&amp;display=swap');
+:root {
+    --bs-primary-rgb: 0,0,64;
+    --bs-success-rgb: 0,141,118;
+    --bs-dark-rgb: 20,40,66;
+    --bs-dark-2-rgb:  19,34,56;
+}
+body {
+    font-family: 'Poppins', cursive;
+    background: rgb(50,136,189);
+    background: linear-gradient(180deg, rgba(50,136,189,1) 0%, rgba(30,64,125,1) 50%, rgba(18,30,64,1) 100%);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    overflow-x: hidden ;
+}
+header {
+    background: rgb(20 40 66);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    z-index: 100;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 21%);
+}
+.logo {
+    width: 60px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.box-shadow {
+    box-shadow: 0px 0px 20px #0047a5;
+}
+.skew{
+    transform: skew(-5deg, -30deg);
+}
+.title {
+    font-family: 'Poppins', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.title-color {
+    background: linear-gradient(180deg, #0047a5 0%, #FF461E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.moon {
+    background: url(../img/moon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    -webkit-transition: all 0s ease-in-out;
+}
+.home {
+    background: url(../img/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+.home-2 {
+    background: url(../img/home-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: row;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-item {
+    background-size: 100% 100%;
+    padding: 5px;
+    /*border: 2px solid #000;*/
+}
+.navbar-light .navbar-nav .nav-link ,.navbar-light .navbar-nav .nav-link.active {
+    font-size: 14px;
+    color: #eee;
+    /*font-weight: bold;*/
+    z-index: 1;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link:focus{
+    color: #fff;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .title{
+        font-size: 2rem;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.55);
+        border-color: rgba(0,0,0,.1);
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+    body {
+        overflow-x: hidden ;
+    }
+    .container {
+         overflow-x: hidden ;
+    }
+}
+.rounded-10 {
+    border-radius: 10px;
+}
+.shibawitch-fly {
+    /*animation: rotate 1.5s infinite;*/
+    /*animation-direction: alternate;*/
+    /*position: relative;*/
+}
+.ghost {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+.ghost-1 {
+    position: absolute;
+    z-index: 2000;
+    opacity: 0.5;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    animation: ghost 30s infinite;
+    /*animation-direction: alternate;*/
+}
+@keyframes ghost {
+    from{
+        opacity: 1;
+        transform: translate(0%,0%);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-1000%,-2000%);
+    }
+}
+.ghost-2 {
+    position: absolute;
+    z-index: 2000;
+    opacity: 0.5;
+    bottom: 0;
+    left: 25%;
+    width: 100px;
+    animation: ghost2 40s infinite;
+    /*animation-direction: alternate;*/
+}
+@keyframes ghost2 {
+    from{
+        opacity: 1;
+        transform: translate(100%,30%);
+    }
+    to {
+        opacity: 0;
+        transform: translate(1000%,-1000%);
+    }
+}
+.rotate {
+    animation: rotate 1.5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotate {
+    from{
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+canvas {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+.bg-halloween {
+    background: rgb(0, 68, 194);
+    background: linear-gradient(90deg, rgb(0, 71, 224) 0%, rgb(0, 65, 150) 50%, rgb(0, 58, 219) 100%);
+}
+.bg-halloween:hover {
+    background: rgb(0, 66, 151);
+    background: linear-gradient(270deg, rgb(0, 62, 231) 0%, rgb(0, 62, 112) 50%, rgb(0, 62, 197) 100%);
+}
+.box-shadow-ami {
+    animation: shadow 1s infinite;
+    animation-direction: alternate;
+}
+.bg-dark-2 {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-2-rgb),var(--bs-bg-opacity))!important;
+}
+@keyframes shadow {
+    from{
+        box-shadow: 0px 0px 0px #ffffff(212, 100%, 29%);
+    }
+    to {
+        box-shadow: 0px 0px 20px #fefeff;
+    }
+}
+.container {
+ z-index: 2;
+ position: relative;
+}
+.roadmap {
+    background: url(../img/roadmap-center.png);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+.roadmap:before {
+    content: "";
+    position: absolute;
+    background: url(../img/roadmap-header.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    top: -60px;
+    left: 0;
+    z-index: 0;
+}
+.roadmap:after {
+    content: "";
+    position: absolute;
+    background: url(../img/roadmap-footer.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 125px;
+    bottom: -90px;
+    left: 0;
+    z-index: 0;
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    font-weight: bold;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #ffffff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.floating {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: 1px dashed #fff;
+    border-radius: 10px;
+    z-index: 100;
+}
